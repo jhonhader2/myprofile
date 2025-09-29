@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portafolio – Jhon Hader Rodriguez Perdomo</title>
+
+    <!-- CSS Modular -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body id="top">
+    <!-- Header Component -->
+    <header>
+        <div class="container nav">
+            <!-- Ícono Home -->
+            <div class="brand">
+                <a href="#top" aria-label="Inicio" class="home-icon" title="Inicio">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M12 3.172 2.293 12.88a1 1 0 0 0 1.414 1.414L5 13.001V20a1 1 0 0 0 1 1h4v-5h4v5h4a1 1 0 0 0 1-1v-6.999l1.293 1.293a1 1 0 1 0 1.414-1.414L12 3.172Z" />
+                    </svg>
+                </a>
+                <!-- Nombre estilizado -->
+                <div class="name" id="styledName">Jhon Hader Rodriguez Perdomo</div>
+            </div>
+
+            <!-- Navegación principal -->
+            <nav aria-label="Principal">
+                <ul>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#recommendations">Recomendaciones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>Acerca de Mí</h2>
+            <div class="card about">
+                <img id="profileImg" src="assets/images/profile.jpg"
+                    alt="Foto de perfil de Jhon Hader Rodriguez Perdomo" />
+                <div>
+                    <h3 id="fullName">Jhon Hader Rodriguez Perdomo</h3>
+                    <p class="muted">Desarrollador Frontend | Apasionado por la accesibilidad, el rendimiento y el
+                        diseño centrado en las personas. +2 años construyendo interfaces limpias con HTML, CSS y
+                        JavaScript.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div class="skill" role="listitem">
+                    <div class="skill-logo" aria-hidden="true">H</div>
+                    <div>HTML5</div>
+                </div>
+                <div class="skill" role="listitem">
+                    <div class="skill-logo" aria-hidden="true">C</div>
+                    <div>CSS3</div>
+                </div>
+                <div class="skill" role="listitem">
+                    <div class="skill-logo" aria-hidden="true">JS</div>
+                    <div>JavaScript (ES6+)</div>
+                </div>
+                <div class="skill" role="listitem">
+                    <div class="skill-logo" aria-hidden="true">G</div>
+                    <div>Git & GitHub</div>
+                </div>
+            </div>
+            <p class="muted" style="margin-top:8px">Sustituye los logos tipográficos por
+                <code>&lt;img src="..." alt="..."&gt;</code> si cuentas con íconos oficiales.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>Proyectos</h2>
+            <div class="grid grid-3">
+                <article class="card project">
+                    <h4>Página de cafetería local</h4>
+                    <p class="muted">Sitio web responsivo con menú dinámico y formulario de reservas.</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span><span class="tag">CSS Grid</span><span class="tag">JS</span>
+                    </div>
+                </article>
+                <article class="card project">
+                    <h4>Panel de control de hábitos</h4>
+                    <p class="muted">Componentes reutilizables, almacenamiento local y modo oscuro.</p>
+                    <div class="tags">
+                        <span class="tag">Flexbox</span><span class="tag">ARIA</span><span class="tag">Vanilla JS</span>
+                    </div>
+                </article>
+                <article class="card project">
+                    <h4>Pokédex minimalista</h4>
+                    <p class="muted">Listado paginado, buscador y tarjetas accesibles.</p>
+                    <div class="tags">
+                        <span class="tag">Fetch</span><span class="tag">SPA básica</span><span
+                            class="tag">Rendimiento</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Recommendations Section -->
+        <section id="recommendations" class="section">
+            <h2>Recomendaciones</h2>
+            <div class="card">
+                <div id="recs" class="recs-list" role="list">
+                    <blockquote class="rec" role="listitem">"Demostró excelente criterio de diseño y calidad de
+                        código."<cite>— Ana M., Tech Lead</cite></blockquote>
+                    <blockquote class="rec" role="listitem">"Entrega constante y comunicación efectiva con
+                        stakeholders."<cite>— Carlos R., PM</cite></blockquote>
+                    <blockquote class="rec" role="listitem">"Aprendizaje rápido y proactividad para resolver
+                        problemas."<cite>— Silvia L., QA</cite></blockquote>
+                </div>
+
+                <form id="recoForm" class="reco" aria-labelledby="formTitle">
+                    <h3 id="formTitle" style="margin:8px 0 0">Agregar recomendación</h3>
+                    <label>
+                        <span class="muted">Tu nombre</span>
+                        <input id="recoName" type="text" placeholder="Tu nombre completo" required />
+                    </label>
+                    <label>
+                        <span class="muted">Mensaje</span>
+                        <textarea id="recoMsg" placeholder="Escribe tu recomendación aquí..." required></textarea>
+                    </label>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Action Button -->
+    <a class="home-fab" href="#top" title="Volver al inicio" aria-label="Volver al inicio">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="#0b1220" aria-hidden="true">
+            <path
+                d="M12 3.172 2.293 12.88a1 1 0 0 0 1.414 1.414L5 13.001V20a1 1 0 0 0 1 1h4v-5h4v5h4a1 1 0 0 0 1-1v-6.999l1.293 1.293a1 1 0 1 0 1.414-1.414L12 3.172Z" />
+        </svg>
+    </a>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-card">
+            <h3 id="modalTitle">¡Gracias por tu recomendación! ✅</h3>
+            <p class="muted">Tu mensaje se ha agregado a la lista.</p>
+            <div style="display:flex; gap:10px; justify-content:flex-end; margin-top:12px">
+                <button id="closeModal" type="button">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Modular -->
+    <script src="assets/js/classes/Modal.js"></script>
+    <script src="assets/js/classes/ProfileImageManager.js"></script>
+    <script src="assets/js/classes/RecommendationManager.js"></script>
+    <script src="assets/js/classes/ScrollSpy.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

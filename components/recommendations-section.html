@@ -1,0 +1,27 @@
+<!-- Recommendations Section Component -->
+<section id="recommendations" class="section">
+    <h2>Recomendaciones</h2>
+    <div class="card">
+        <div id="recs" class="recs-list" role="list">
+            <blockquote class="rec" role="listitem">"Demostró excelente criterio de diseño y calidad de
+                código."<cite>— Ana M., Tech Lead</cite></blockquote>
+            <blockquote class="rec" role="listitem">"Entrega constante y comunicación efectiva con
+                stakeholders."<cite>— Carlos R., PM</cite></blockquote>
+            <blockquote class="rec" role="listitem">"Aprendizaje rápido y proactividad para resolver
+                problemas."<cite>— Silvia L., QA</cite></blockquote>
+        </div>
+
+        <form id="recoForm" class="reco" aria-labelledby="formTitle">
+            <h3 id="formTitle" style="margin:8px 0 0">Agregar recomendación</h3>
+            <label>
+                <span class="muted">Tu nombre</span>
+                <input id="recoName" type="text" placeholder="Tu nombre completo" required />
+            </label>
+            <label>
+                <span class="muted">Mensaje</span>
+                <textarea id="recoMsg" placeholder="Escribe tu recomendación aquí..." required></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>

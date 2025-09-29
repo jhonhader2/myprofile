@@ -1,0 +1,11 @@
+/* Archivo principal CSS - Importa todos los módulos */
+@import url('./variables.css');
+@import url('./base.css');
+@import url('./header.css');
+@import url('./about.css');
+@import url('./skills.css');
+@import url('./projects.css');
+@import url('./recommendations.css');
+@import url('./modal.css');
+@import url('./fab.css');
+@import url('./responsive.css');

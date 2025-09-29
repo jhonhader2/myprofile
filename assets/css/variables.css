@@ -1,0 +1,19 @@
+/* Variables CSS - Configuración central */
+:root {
+    --bg: #0f172a;
+    /* slate-900 */
+    --card: #111827;
+    /* gray-900 */
+    --muted: #94a3b8;
+    /* slate-400 */
+    --text: #e5e7eb;
+    /* gray-200 */
+    --accent: #22d3ee;
+    /* cyan-400 */
+    --accent-2: #60a5fa;
+    /* blue-400 */
+    --ok: #34d399;
+    /* emerald-400 */
+    --warning: #f59e0b;
+    /* amber-500 */
+}
