@@ -112,7 +112,10 @@
         <!-- Recommendations Section -->
         <section id="recommendations" class="section">
             <h2>Recomendaciones</h2>
+
+            <!-- Lista de recomendaciones existentes -->
             <div class="card">
+                <h3 style="margin: 0 0 16px; color: var(--text); font-size: 1.2rem;">Lo que dicen sobre mí</h3>
                 <div id="recs" class="recs-list" role="list">
                     <blockquote class="rec" role="listitem">"Demostró excelente criterio de diseño y calidad de
                         código."<cite>— Ana M., Tech Lead</cite></blockquote>
@@ -121,9 +124,13 @@
                     <blockquote class="rec" role="listitem">"Aprendizaje rápido y proactividad para resolver
                         problemas."<cite>— Silvia L., QA</cite></blockquote>
                 </div>
+            </div>
 
+            <!-- Formulario para agregar recomendación -->
+            <div class="card" style="margin-top: 20px;">
+                <h3 id="formTitle" style="margin: 0 0 16px; color: var(--text); font-size: 1.2rem;">Agregar
+                    recomendación</h3>
                 <form id="recoForm" class="reco" aria-labelledby="formTitle">
-                    <h3 id="formTitle" style="margin:8px 0 0">Agregar recomendación</h3>
                     <label>
                         <span class="muted">Tu nombre</span>
                         <input id="recoName" type="text" placeholder="Tu nombre completo" required />
